@@ -33,6 +33,7 @@
   --fontheading: "titillium"; }
 
 body {
+  overflow-x: hidden;
   min-height: 100vh;
   background: linear-gradient(110.79deg, #f9f8f8 68.23%, #d6d3d1 90.5%, #c9c5c3 106.84%); }
 
