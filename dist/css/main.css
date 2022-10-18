@@ -101,6 +101,8 @@ section.heading {
   margin-bottom: 0;
   margin-left: 0; }
   .sites-list-container .sites-view .item {
+    opacity: 0;
+    animation: FadeIn 0.5s ease 1 forwards;
     margin: 10px;
     box-sizing: border-box;
     background: white;
@@ -230,7 +232,7 @@ section.heading {
       padding-top: 30px;
       padding-bottom: 30px;
       border-radius: 10px;
-      transition: 0.3s all ease; }
+      transition: 0.3s width ease; }
       .sites-list-container .sites-view .item.grid-group-item .review {
         margin-top: 5px; }
       .sites-list-container .sites-view .item.grid-group-item .site-bonus {
@@ -249,7 +251,7 @@ section.heading {
       max-width: 1064px;
       padding: 0 1rem;
       border: 0;
-      transition: 0.3s all ease;
+      transition: 0.3s width ease;
       display: block;
       height: 60px;
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; }
@@ -389,5 +391,35 @@ section.heading {
             display: none; }
     .sites-list-container .link-view-all {
       text-decoration: underline; } }
+@keyframes FadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes FadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-moz-keyframes FadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes FadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-o-keyframes FadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-ms-keyframes FadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /*# sourceMappingURL=main.css.map */
